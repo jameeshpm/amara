@@ -14,7 +14,7 @@ export async function sendEmail(formData: FormData) {
 
   try {
     const data = await resend.emails.send({
-      from: process.env.NEXT_PUBLIC_RESEND_FROM_EMAIL || "booking@resend.dev",
+      from: email,
       to: process.env.NEXT_PUBLIC_RESEND_TO_EMAIL || "jameeshpm@gmail.com",
       subject: "Booking Confirmation",
       html: `
