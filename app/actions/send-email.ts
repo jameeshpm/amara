@@ -1,8 +1,15 @@
 "use server";
 
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+// Create a transporter using SMTP
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASSWORD,
+  },
+});
 
 export async function sendEmail(formData: FormData) {
   const name = formData.get("name") as string;
@@ -13,26 +20,28 @@ export async function sendEmail(formData: FormData) {
   const time = formData.get("time") as string;
 
   try {
-    const data = await resend.emails.send({
-      from: email,
-      to: process.env.NEXT_PUBLIC_RESEND_TO_EMAIL || "jameeshpm@gmail.com",
-      subject: "Booking Confirmation",
+    const mailOptions = {
+      from: process.env.SMTP_FROM || email,
+      to: process.env.SMTP_TO_EMAIL || "jameeshpm@gmail.com",
+      subject: "Booking request",
       html: `
-        <h1>Booking Confirmation</h1>
+        <h1>Booking request</h1>
         <p>Dear ${name},</p>
-        <p>Your booking has been confirmed for the following:</p>
+        <p>A booking has been requested for the following:</p>
         <ul>
           <li>Service: ${service}</li>
           <li>Date: ${date}</li>
           <li>Time: ${time}</li>
         </ul>
-        <p>We'll contact you at ${phone} if we need any additional information.</p>
-        <p>Thank you for choosing our service!</p>
+        <p>Please contact me at ${phone} for more details.</p>
+        <p>Thank you !</p>
       `,
-    });
+    };
 
-    return { success: true, data };
+    const info = await transporter.sendMail(mailOptions);
+    return { success: true, data: info };
   } catch (error) {
+    console.error("Error sending email:", error);
     return { success: false, error };
   }
 }

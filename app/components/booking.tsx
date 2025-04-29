@@ -113,9 +113,9 @@ const Booking = () => {
     const result = await sendEmail(formData)
 
     if (result.success) {
-      setSubmitMessage("Booking confirmed! Check your email for details.")
+      setSubmitMessage("Booking request sent! We will contact you shortly.")
     } else {
-      setSubmitMessage("There was an error processing your booking. Please try again.")
+      setSubmitMessage("There was an error sending the booking request. Please try again.")
     }
 
     setIsSubmitting(false)
@@ -226,27 +226,27 @@ const Booking = () => {
                   }}
                 />
               </div>
-                <div>
+              <div>
                 <label className="block text-sm mb-1 font-normal leading-6 font-poppins">Phone number</label>
                 <div className="flex">
                   <span className="inline-flex items-center px-3 bg-lightgrey border border-gray-300 rounded-l-sm text-base">
-                  +353
+                    +353
                   </span>
                   <input
-                  type="tel"
-                  placeholder="Enter phone number"
-                  className="w-full p-3 sm:p-3 bg-lightgrey border border-gray-300 rounded-r-sm focus:ring-2 focus:ring-blue-400 text-base"
-                  required
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  onBlur={(e) => {
-                    if (!validatePhoneNumber(e.target.value)) {
-                    alert("Invalid phone number format")
-                    }
-                  }}
+                    type="tel"
+                    placeholder="Enter phone number"
+                    className="w-full p-3 sm:p-3 bg-lightgrey border border-gray-300 rounded-r-sm focus:ring-2 focus:ring-blue-400 text-base"
+                    required
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    onBlur={(e) => {
+                      if (!validatePhoneNumber(e.target.value)) {
+                        alert("Invalid phone number format")
+                      }
+                    }}
                   />
                 </div>
-                </div>
+              </div>
             </div>
 
             {/* Submit Button */}
