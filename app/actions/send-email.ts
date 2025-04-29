@@ -26,9 +26,10 @@ export async function sendEmail(formData: FormData) {
       subject: "Booking request",
       html: `
         <h1>Booking request</h1>
-        <p>Dear ${name},</p>
+        <p>Hi Amara</p>
         <p>A booking has been requested for the following:</p>
         <ul>
+          <li>Customer Name: ${name}</li>
           <li>Service: ${service}</li>
           <li>Date: ${date}</li>
           <li>Time: ${time}</li>
