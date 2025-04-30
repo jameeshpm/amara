@@ -50,7 +50,7 @@ export const services = [
     image: "/service4.jpg",
     description:
       "Let the warmth of smooth basalt stones melt away your tension. This therapy combines hot stone placement with traditional massage techniques.",
-    price: 85.0,
+    price: 90.0,
     subServices: [
       { name: "Hot Stone Placement", duration: 15 },
       { name: "Full Body Massage", duration: 45 },
@@ -83,7 +83,7 @@ export const services = [
     image: "/service7.jpg",
     description:
       "Luxuriate in warm, therapeutic oils that nourish your skin and relax your muscles. Perfect for dry skin and deep relaxation.",
-    price: 60.0,
+    price: 70.0,
     subServices: [
       { name: "Oil Application", duration: 15 },
       { name: "Full Body Massage", duration: 75 },
@@ -105,9 +105,9 @@ export const services = [
     image: "/service9.jpg",
     description:
       "Experience this ancient therapy that uses suction to promote blood flow, reduce pain, and encourage healing.",
-    price: 85.0,
+    price: 100,
     subServices: [
-      { name: "Cupping Application", duration: 30 },
+      { name: "Cupping Application", duration: 90 },
       { name: "Relaxation and Removal", duration: 60 },
     ],
   },
