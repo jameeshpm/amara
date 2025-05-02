@@ -11,7 +11,7 @@ const Home = () => (
     <Hero />
     <Services cardsPerView={3} />
     <Gallery />
-    <Booking />
+    {/* <Booking /> */}
     <TestimonialsSection />
   </div>
 );
