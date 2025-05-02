@@ -30,6 +30,7 @@ export async function sendEmail(formData: FormData) {
         <p>A booking has been requested for the following:</p>
         <ul>
           <li>Customer Name: ${name}</li>
+          <li>Customer Email: ${email}</li>
           <li>Service: ${service}</li>
           <li>Date: ${date}</li>
           <li>Time: ${time}</li>
