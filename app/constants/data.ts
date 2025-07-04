@@ -13,104 +13,165 @@ export const SLIDES = [
 
 export const services = [
   {
-    title: "Traditional Vedic Massage",
+    title: "Hot Oil and Deep tissue Massage",
     image: "/service1.jpg",
     description:
-      "Experience authentic vedic massage techniques passed down through generations. Our skilled therapists combine traditional methods with modern comfort.",
-    price: 70.0,
-    subServices: [
-      { name: "Hot Stone Massage", duration: 55 },
-      { name: "Head Oil Massage", duration: 15 },
-    ],
+      "Experience the perfect blend of therapeutic hot oil and deep tissue techniques. This massage combines the soothing warmth of heated oils with targeted pressure to release chronic muscle tension and promote deep relaxation.",
+    price1: "70.0/60 Minutes",
+    price2: "90.0/90 Minutes"
   },
   {
-    title: "Aromatherapy Package",
+    title: "Hot Oil Massage",
+    image: "/service1.jpg",
+    description:
+      "Indulge in a luxurious hot oil massage that nourishes your skin while melting away tension. The warm therapeutic oils penetrate deep into your muscles, promoting circulation and leaving you feeling completely relaxed and rejuvenated.",
+    price1: "70.0/60 Minutes"
+  },
+  {
+    title: "Traditional Thai Massage",
     image: "/service2.jpg",
     description:
-      "Immerse yourself in a world of therapeutic aromas. Our carefully selected essential oils enhance both physical and mental wellbeing.",
-    price: 70.0,
-    subServices: [
-      { name: "Essential Oil Massage", duration: 45 },
-      { name: "Facial Treatment", duration: 30 },
-    ],
+      "Discover the ancient art of Thai massage, combining acupressure, yoga-like stretching, and energy line work. This traditional technique improves flexibility, relieves muscle tension, and promotes overall wellness through rhythmic compression and stretching.",
+    price1: "70.0/60 Minutes",
+    price2: "90.0/90 Minutes"
   },
   {
-    title: "Deep Tissue Treatment",
+    title: "Thai Hot oil Massage",
+    image: "/service6.jpg",
+    description:
+      "Experience the best of both worlds with our Thai hot oil massage. This unique fusion combines traditional Thai massage techniques with the therapeutic benefits of warm oils, creating a deeply relaxing and rejuvenating experience.",
+    price1: "70.0/60 Minutes",
+    price2: "90.0/90 Minutes"
+  },
+  {
+    title: "Deep Tissue Sport Massage",
     image: "/service3.jpg",
     description:
-      "Target chronic muscle tension and deep-seated knots with our specialized deep tissue techniques. Perfect for athletes and those with muscle pain.",
-    price: 70.0,
-    subServices: [
-      { name: "Deep Tissue Massage", duration: 60 },
-      { name: "Muscle Relief Therapy", duration: 20 },
-    ],
+      "Specifically designed for athletes and active individuals, this deep tissue sports massage targets muscle recovery, improves performance, and helps prevent injuries. Perfect for relieving post-workout soreness and maintaining peak physical condition.",
+    price1: "70.0/60 Minutes",
+    price2: "90.0/90 Minutes"
   },
   {
-    title: "Hot Stone Massage",
-    image: "/service4.jpg",
+    title: "Thai back neck & shoulder Massage",
+    image: "/service8.jpg",
     description:
-      "Let the warmth of smooth basalt stones melt away your tension. This therapy combines hot stone placement with traditional massage techniques.",
-    price: 90.0,
-    subServices: [
-      { name: "Hot Stone Placement", duration: 15 },
-      { name: "Full Body Massage", duration: 45 },
-    ],
+      "Focus on relieving tension in your back, neck, and shoulders with this targeted Thai massage. Ideal for office workers and anyone experiencing stress-related muscle tightness in these common problem areas.",
+    price1: "70.0/60 Minutes",
+    price2: "40.0/30 Minutes"
   },
   {
     title: "Thai Head Massage",
     image: "/service5.jpg",
     description:
-      "Release tension headaches and promote mental clarity with our traditional Thai head massage techniques.",
-    price: 70.0,
-    subServices: [
-      { name: "Neck and Shoulder Massage", duration: 30 },
-      { name: "Scalp and Face Massage", duration: 30 },
-    ],
+      "Release tension headaches and promote mental clarity with our traditional Thai head massage. This gentle yet effective treatment targets pressure points on the head, face, and neck to relieve stress and improve concentration.",
+    price1: "70.0/60 Minutes",
+    price2: "40.0/30 Minutes"
   },
   {
-    title: "Guasha Facial Massage",
-    image: "/service6.jpg",
-    description:
-      "Ancient Chinese healing technique that promotes circulation and natural glow. Experience improved skin texture and reduced tension.",
-    price: 70.0,
-    subServices: [
-      { name: "Facial Cleansing", duration: 15 },
-      { name: "Guasha Technique", duration: 45 },
-    ],
-  },
-  {
-    title: "Hot Oil Massage",
+    title: "Thai Foot Massage",
     image: "/service7.jpg",
     description:
-      "Luxuriate in warm, therapeutic oils that nourish your skin and relax your muscles. Perfect for dry skin and deep relaxation.",
-    price: 70.0,
-    subServices: [
-      { name: "Oil Application", duration: 15 },
-      { name: "Full Body Massage", duration: 75 },
-    ],
+      "Experience the ancient healing art of Thai foot massage, which stimulates reflex points that correspond to different parts of your body. This therapeutic treatment promotes circulation, relieves foot fatigue, and provides overall wellness benefits.",
+    price1: "70.0/60 Minutes",
+    price2: "40.0/30 Minutes"
   },
   {
-    title: "Shoulder Massage",
+    title: "Deep Oil Healing Massage",
     image: "/service8.jpg",
     description:
-      "Focus on relieving tension in the shoulders, upper back, and neck. Ideal for office workers and those with sedentary lifestyles.",
-    price: 70.0,
-    subServices: [
-      { name: "Upper Back Massage", duration: 30 },
-      { name: "Shoulder and Neck Focus", duration: 30 },
-    ],
+      "Immerse yourself in a deeply therapeutic massage that combines the healing properties of premium oils with advanced deep tissue techniques. This treatment promotes muscle recovery, reduces inflammation, and accelerates the body's natural healing processes.",
+    price1: "70.0/60 Minutes",
+    price2: "90.0/90 Minutes"
   },
   {
-    title: "Dry Cupping Therapy",
+    title: "Hot Stone and Oil Massage",
+    image: "/service4.jpg",
+    description:
+      "Let the warmth of smooth basalt stones melt away your tension while therapeutic oils nourish your skin. This luxurious treatment combines hot stone placement with traditional massage techniques for ultimate relaxation and stress relief.",
+    price1: "85.0/60 Minutes"
+  },
+  {
+    title: "Dry cupping therapy & massage",
     image: "/service9.jpg",
     description:
-      "Experience this ancient therapy that uses suction to promote blood flow, reduce pain, and encourage healing.",
-    price: 100,
-    subServices: [
-      { name: "Cupping Application", duration: 90 },
-      { name: "Relaxation and Removal", duration: 60 },
-    ],
+      "Experience the ancient healing benefits of dry cupping therapy combined with therapeutic massage. This treatment uses suction to promote blood flow, reduce pain, release muscle tension, and encourage natural healing throughout your body.",
+    price1: "100.0/90 Minutes"
   },
+  // {
+  //   title: "Traditional Vedic Massage",
+  //   image: "/service1.jpg",
+  //   description:
+  //     "Experience authentic vedic massage techniques passed down through generations. Our skilled therapists combine traditional methods with modern comfort.",
+  //   price: 70.0,
+    
+  // },
+  // {
+  //   title: "Aromatherapy Package",
+  //   image: "/service2.jpg",
+  //   description:
+  //     "Immerse yourself in a world of therapeutic aromas. Our carefully selected essential oils enhance both physical and mental wellbeing.",
+  //   price: 70.0,
+    
+  // },
+  // {
+  //   title: "Deep Tissue Treatment",
+  //   image: "/service3.jpg",
+  //   description:
+  //     "Target chronic muscle tension and deep-seated knots with our specialized deep tissue techniques. Perfect for athletes and those with muscle pain.",
+  //   price: 70.0,
+    
+  // },
+  // {
+  //   title: "Hot Stone Massage",
+  //   image: "/service4.jpg",
+  //   description:
+  //     "Let the warmth of smooth basalt stones melt away your tension. This therapy combines hot stone placement with traditional massage techniques.",
+  //   price: 90.0,
+  //   // subServices: [
+  //   //   { name: "Hot Stone Placement", duration: 15 },
+  //   //   { name: "Full Body Massage", duration: 45 },
+  //   // ],
+  // },
+  // {
+  //   title: "Thai Head Massage",
+  //   image: "/service5.jpg",
+  //   description:
+  //     "Release tension headaches and promote mental clarity with our traditional Thai head massage techniques.",
+  //   price: 70.0,
+    
+  // },
+  // {
+  //   title: "Guasha Facial Massage",
+  //   image: "/service6.jpg",
+  //   description:
+  //     "Ancient Chinese healing technique that promotes circulation and natural glow. Experience improved skin texture and reduced tension.",
+  //   price: 70.0,
+    
+  // },
+  // {
+  //   title: "Hot Oil Massage",
+  //   image: "/service7.jpg",
+  //   description:
+  //     "Luxuriate in warm, therapeutic oils that nourish your skin and relax your muscles. Perfect for dry skin and deep relaxation.",
+  //   price: 70.0,
+    
+  // },
+  // {
+  //   title: "Shoulder Massage",
+  //   image: "/service8.jpg",
+  //   description:
+  //     "Focus on relieving tension in the shoulders, upper back, and neck. Ideal for office workers and those with sedentary lifestyles.",
+  //   price: 70.0,
+    
+  // },
+  // {
+  //   title: "Dry Cupping Therapy",
+  //   image: "/service9.jpg",
+  //   description:
+  //     "Experience this ancient therapy that uses suction to promote blood flow, reduce pain, and encourage healing.",
+  //   price: 100,
+    
+  // },
 ];
 
 export const galleryImages = [
